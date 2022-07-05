@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>pom.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #f8f8f2;}
+.s1 { color: #68a8cb; font-style: italic;}
+.s2 { color: #f8f8f2;}
+.s3 { color: #69e0f5;}
+.s4 { color: #f8f8f2;}
+.s5 { color: #e0474b;}
+.s6 { color: #4c8484; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#161415">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pom.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s2">&lt;</span><span class="s5">project </span><span class="s1">xmlns</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0&quot;</span>
+         <span class="s1">xmlns:xsi</span><span class="s3">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+         <span class="s1">xsi:schemaLocation</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">modelVersion</span><span class="s2">&gt;</span><span class="s0">4.0.0</span><span class="s2">&lt;/</span><span class="s5">modelVersion</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s5">groupId</span><span class="s2">&gt;</span><span class="s0">org.example</span><span class="s2">&lt;/</span><span class="s5">groupId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">artifactId</span><span class="s2">&gt;</span><span class="s0">TesteLucas</span><span class="s2">&lt;/</span><span class="s5">artifactId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">version</span><span class="s2">&gt;</span><span class="s0">1.0-SNAPSHOT</span><span class="s2">&lt;/</span><span class="s5">version</span><span class="s2">&gt;</span>
+
+    <span class="s2">&lt;</span><span class="s5">properties</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">maven.compiler.source</span><span class="s2">&gt;</span><span class="s0">11</span><span class="s2">&lt;/</span><span class="s5">maven.compiler.source</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">maven.compiler.target</span><span class="s2">&gt;</span><span class="s0">11</span><span class="s2">&lt;/</span><span class="s5">maven.compiler.target</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s5">properties</span><span class="s2">&gt;</span>
+<span class="s2">&lt;</span><span class="s5">dependencies</span><span class="s2">&gt;</span><span class="s6">&lt;!-- https://mvnrepository.com/artifact/com.opencsv/opencsv --&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">groupId</span><span class="s2">&gt;</span><span class="s0">com.opencsv</span><span class="s2">&lt;/</span><span class="s5">groupId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">artifactId</span><span class="s2">&gt;</span><span class="s0">opencsv</span><span class="s2">&lt;/</span><span class="s5">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">version</span><span class="s2">&gt;</span><span class="s0">4.1</span><span class="s2">&lt;/</span><span class="s5">version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+    <span class="s6">&lt;!-- https://mvnrepository.com/artifact/com.google.code.gson/gson --&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">groupId</span><span class="s2">&gt;</span><span class="s0">com.google.code.gson</span><span class="s2">&lt;/</span><span class="s5">groupId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">artifactId</span><span class="s2">&gt;</span><span class="s0">gson</span><span class="s2">&lt;/</span><span class="s5">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">version</span><span class="s2">&gt;</span><span class="s0">2.8.5</span><span class="s2">&lt;/</span><span class="s5">version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">groupId</span><span class="s2">&gt;</span><span class="s0">joda-time</span><span class="s2">&lt;/</span><span class="s5">groupId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">artifactId</span><span class="s2">&gt;</span><span class="s0">joda-time</span><span class="s2">&lt;/</span><span class="s5">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s5">version</span><span class="s2">&gt;</span><span class="s0">2.10.10</span><span class="s2">&lt;/</span><span class="s5">version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s5">dependency</span><span class="s2">&gt;</span>
+<span class="s2">&lt;/</span><span class="s5">dependencies</span><span class="s2">&gt;</span>
+<span class="s2">&lt;/</span><span class="s5">project</span><span class="s2">&gt;</span></pre>
+</body>
+</html>
