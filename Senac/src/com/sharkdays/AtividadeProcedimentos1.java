@@ -1,4 +1,4 @@
-package com.sharkdays;
+package Senac.src.com.sharkdays;
 
 import java.util.Scanner;
 
@@ -33,5 +33,6 @@ public class AtividadeProcedimentos1 {
         }
 
         System.out.println("O mês correspondente é " + texto);
+        System.out.println("Teste");
     }
 }
