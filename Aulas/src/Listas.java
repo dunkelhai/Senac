@@ -40,6 +40,10 @@ public class Listas {
             System.out.println(item);
         }
 
+        //Trazer o primeiro elemento da lista que atende ao predicado
+        String nome = lista.stream().filter(item -> item.charAt(0) == 'A').findFirst().orElse(null);
+
+        System.out.println(nome);
 
 
     }
