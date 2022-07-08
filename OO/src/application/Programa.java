@@ -21,7 +21,7 @@ public class Programa {
         //Casting forcado
         ContaPj conta4 = (ContaPj) conta2;
         conta4.emprestimo(10);
-        
+
         // ContaPj conta5 = (ContaPj) conta3; Aqui da erro na hora de rodar
 
         if (conta3 instanceof ContaPj){

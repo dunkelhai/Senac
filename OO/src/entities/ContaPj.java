@@ -20,11 +20,16 @@ public class ContaPj extends Conta{
     public void setLimiteEmprestimo(Double limiteEmprestimo) {
         this.limiteEmprestimo = limiteEmprestimo;
     }
-
     public void emprestimo(double quantia){
         if (quantia <= limiteEmprestimo){
         deposito(quantia);
         saldo += quantia - 10.0;
         }
+    }
+
+    @Override
+    public void saque(double quantia){
+        super.saque(quantia);
+        saldo -= 2;
     }
 }
