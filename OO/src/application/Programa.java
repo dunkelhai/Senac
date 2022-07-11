@@ -7,7 +7,7 @@ import entities.ContaPoupanca;
 public class Programa {
     public static void main(String[] args) {
 
-        Conta contaPf = new Conta(1,"Lucas",1000.0);
+        Conta contaPf = new ContaPj(1,"Lucas",1000.0,100.2);
         ContaPj contaPj = new ContaPj(2,"Maria",200.9,900.0);
 
         // UPCASTING

@@ -1,6 +1,7 @@
 package entities;
 
-public class ContaPoupanca extends Conta{
+//final na classe evita que ela seja herdada
+public final class ContaPoupanca extends Conta{
 
     private Double taxaJuros;
 
@@ -21,7 +22,8 @@ public class ContaPoupanca extends Conta{
         this.taxaJuros = taxaJuros;
     }
 
-    public void atualizarSaldo(){
+    //final no metodo nao deixa que o metodo seja sobreposto
+    public final void atualizarSaldo(){
         saldo += saldo * taxaJuros;
     }
     @Override

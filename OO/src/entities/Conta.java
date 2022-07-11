@@ -1,6 +1,7 @@
 package entities;
 
-public class Conta {
+// abstract serve para dizer que a classe serve so pra estender, nao pode ser instanciada
+public abstract class Conta {
     private Integer numero;
     private String portador;
 
