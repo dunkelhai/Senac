@@ -30,7 +30,7 @@ public class ArquivoPastas {
 
         //Criar subpasta
 
-        boolean deuCerto = new File(strPath + "\\pastaTeste").mkdir();
+        boolean deuCerto = new File(strPath + "pastaTeste").mkdir();
         System.out.println("Diretório criado com sucesso: " + deuCerto);
 
         sc.close();
