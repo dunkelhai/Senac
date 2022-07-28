@@ -11,7 +11,7 @@ public class ArquivoExtras {
         String strPath = sc.nextLine();
 
         File path = new File(strPath);
-        
+
         System.out.println("getName: " + path.getName());
         System.out.println("getParent: " + path.getParent());
         System.out.println("getPath: " + path.getPath());
