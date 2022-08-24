@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrintService {
-    private List<Integer> list = new ArrayList<>();
+    private List<Object> list = new ArrayList<>();
 
-    public void addValue(Integer value){
+    public void addValue(Object value){
         list.add(value);
     }
 
-    public Integer first(){
+    public Object first(){
         if (list.isEmpty()){
             throw new IllegalStateException("Lista vazia");
         }
