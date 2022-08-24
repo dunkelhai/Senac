@@ -13,6 +13,8 @@ public class Program1 {
         System.out.println("Quantos valores? ");
         int escolha = entrada.nextInt();
 
+        ps.addValue("Maria");
+
         for (int i = 0; i < escolha; i++){
             System.out.println("Adicione o " + i + " valor: ");
             int valor = entrada.nextInt();
@@ -20,6 +22,7 @@ public class Program1 {
         }
 
         ps.print();
+        Integer x = (Integer) ps.first();
         System.out.println("Primeiro item: " + ps.first());
 
         entrada.close();
