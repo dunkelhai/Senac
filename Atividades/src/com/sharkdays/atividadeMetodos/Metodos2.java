@@ -26,8 +26,7 @@ public class Metodos2 {
         System.out.println("Digite o cateto 2");
         c2 = entrada.nextDouble();
 
-        Metodos2 metodos2 = new Metodos2();
-        System.out.println(metodos2.pitagoras(c1,c2));
+        System.out.println(pitagoras(c1,c2));
 
 
     }
