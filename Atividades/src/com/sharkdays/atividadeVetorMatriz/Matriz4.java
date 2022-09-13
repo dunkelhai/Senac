@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Matriz4 {
     public static void main(String[] args) {
-
         String nome = "SENAC TESTE";
         String matriz[][] = new String[3][3];
 
