@@ -55,6 +55,10 @@ public class Pessoa {
         this.peso = peso;
     }
 
+    public double getIMC(Double peso, Double altura){
+        return peso / Math.pow(altura,2);
+    }
+
     @Override
     public String toString() {
         return "Pessoa{" +
