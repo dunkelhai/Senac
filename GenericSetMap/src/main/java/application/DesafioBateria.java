@@ -17,12 +17,10 @@ public class DesafioBateria {
             System.out.println("Digite o evento " + i + ":");
             events[i] = input.nextInt();
         }
-
         result = getBattery(events, battery);
-        System.out.println(result);
+        System.out.println("\nBateria final: " + result);
 
     }
-
     public static Integer getBattery(Integer events[], Integer battery) {
         for (int i = 0; i < events.length; i++) {
             if (events[i] > 0) {
@@ -38,6 +36,8 @@ public class DesafioBateria {
             } else {
                 battery = battery + 0;
             }
+            System.out.println("Após esse evento, foi consumido " + events[i] +
+            "% de bateria e o restante de bateria foi de " + battery + "% de bateria!");
         }
         return battery;
     }
