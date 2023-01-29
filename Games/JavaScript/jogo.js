@@ -12,6 +12,7 @@ function myfunc() {
 	b7 = document.getElementById("b7").value;
 	b8 = document.getElementById("b8").value;
 	b9 = document.getElementById("b9").value;
+	System.out.println("TEste");
 
 	// Checking if Player X won or not and after
 	// that disabled all the other fields
