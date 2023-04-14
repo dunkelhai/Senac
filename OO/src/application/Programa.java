@@ -9,6 +9,7 @@ public class Programa {
 
         Conta contaPf = new ContaPj(1,"Lucas",1000.0,100.2);
         ContaPj contaPj = new ContaPj(2,"Maria",200.9,900.0);
+        Conta contaEsp = new ContaPj(3, "JOnas", 900.0, 9000.9);
 
         // UPCASTING
 
@@ -34,6 +35,8 @@ public class Programa {
             conta5.atualizarSaldo();
             System.out.println("Atualizado");
         }
+
+        System.out.println(contaEsp.getPortador());
 
 
 
