@@ -4,6 +4,8 @@ import entities.Conta;
 import entities.ContaPj;
 import entities.ContaPoupanca;
 
+import javax.swing.plaf.basic.BasicGraphicsUtils;
+
 public class Programa {
     public static void main(String[] args) {
 
@@ -39,6 +41,8 @@ public class Programa {
         System.out.println(contaEsp.getPortador());
 
         System.out.println("TESTE NOVO");
+
+        BasicGraphicsUtils.drawBezel();
 
     }
 }
