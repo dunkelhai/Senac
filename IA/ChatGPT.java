@@ -6,32 +6,39 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import com.google.gson.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import org.json.JSONObject;
 
 public class ChatGPT {
- public static void main(String[] args) throws Exception {
-            String token = "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";
-            URL url = new URL("https://api.openai.com/v1/engines/davinci-codex/completions");
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            con.setRequestMethod("POST");
-            con.setRequestProperty("Authorization", "Bearer " + token);
-            con.setRequestProperty("Content-Type", "application/json");
-            con.setDoOutput(true);
-            String inputJson = "{\"prompt\": \"Qual é a capital do Brasil?\", \"max_tokens\": 1}";
-            OutputStream os = con.getOutputStream();
-            os.write(inputJson.getBytes());
-            os.flush();
-            os.close();
-            int responseCode = con.getResponseCode();
-            System.out.println("Response code: " + responseCode);
-            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-            String inputLine;
-            StringBuffer content = new StringBuffer();
-            while ((inputLine = in.readLine()) != null) {
-                content.append(inputLine);
-            }
-            in.close();
-            JsonObject responseJson = JsonParser.parseString(content.toString()).getAsJsonObject();
-            String answer = responseJson.getAsJsonArray("choices").get(0).getAsJsonObject().get("text").getAsString();
-            System.out.println("Answer: " + answer);
-        }
+
+
+    public static void chatGPT(String text) throws Exception {
+        String url = "https://api.openai.com/v1/completions";
+        HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
+
+        con.setRequestMethod("POST");
+        con.setRequestProperty("Content-Type", "application/json");
+        con.setRequestProperty("Authorization", "token.chatgpt.api");
+
+        JSONObject data = new JSONObject();
+        data.put("model", "text-davinci-003");
+        data.put("prompt", text);
+        data.put("max_tokens", 4000);
+        data.put("temperature", 1.0);
+
+        con.setDoOutput(true);
+        con.getOutputStream().write(data.toString().getBytes());
+
+        String output = new BufferedReader(new InputStreamReader(con.getInputStream())).lines()
+                .reduce((a, b) -> a + b).get();
+
+        System.out.println(new JSONObject(output).getJSONArray("choices").getJSONObject(0).getString("text"));
     }
+
+    public static void main(String[] args) throws Exception {
+        chatGPT("Hello, how are you?");
+    }
+}
