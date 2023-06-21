@@ -42,7 +42,7 @@ public class Programa {
 
         System.out.println("TESTE NOVO");
 
-        BasicGraphicsUtils.drawBezel();
+//        BasicGraphicsUtils.drawBezel();
 
     }
 }
