@@ -12,7 +12,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class PInterfaces1 {
-    //teste
     public static void main(String[] args) throws ParseException {
 
         Locale.setDefault(Locale.US);
