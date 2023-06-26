@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+       PositivoNegativoZero.verificarPositivoNegativoZero(2);
+
        Scanner entrada = new Scanner(System.in);
         System.out.println("Escolha o programa:" +
                 "\n1-Calc" +
