@@ -1,10 +1,24 @@
 package test.java.org.example;
 
 import main.java.org.example.CalculadoraSimples;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CalculadoraSimplesTest {
+
+    private CalculadoraSimples calculadora;
+
+    @Before
+    public void setUp() {
+        calculadora = new CalculadoraSimples();
+    }
+
+    @After
+    public void tearDown() {
+        calculadora = null;
+    }
 
     @Test
     public void testSoma() {
