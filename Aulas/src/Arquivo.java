@@ -8,7 +8,7 @@ public class Arquivo {
     public static void main(String[] args) {
 
         System.out.println("Leitura do arquivo");
-        File file = new File("/Users/Alysson/Texto/teste.txt");
+        File file = new File("C:\\Users\\alysson.oliveira\\Documents/teste.txt");
         Scanner sc = null;
 
         try {

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GenericSetMap.iml" filepath="$PROJECT_DIR$/GenericSetMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/OO/OO.iml" filepath="$PROJECT_DIR$/OO/OO.iml" />
     </modules>
   </component>
