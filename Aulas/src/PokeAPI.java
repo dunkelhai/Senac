@@ -51,6 +51,9 @@ public class PokeAPI {
                 System.out.println("Nome: " + pokemonName);
                 System.out.println("Altura: " + pokemonHeight);
                 System.out.println("Peso: " + pokemonWeight);
+
+                System.out.println(jsonNode);
+
             } else {
                 System.out.println("Erro na conexão: " + responseCode);
             }
