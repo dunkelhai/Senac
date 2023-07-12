@@ -16,11 +16,15 @@ public class PokeAPI {
             // Abertura do Scanner
             Scanner sc = new Scanner(System.in);
             //Escolher o Pokemon
-            String nomePokemon = JOptionPane.showInputDialog("Escreva o nome do Pokemón desejado: ");
+            String nomePokemon =
+                    JOptionPane.showInputDialog("" +
+                            "Escreva o nome do Pokemón desejado: ");
             // URL da API do PokeAPI
-            URL url = new URL("https://pokeapi.co/api/v2/pokemon/" + nomePokemon);
+            URL url = new URL("https://pokeapi.co/api/v2/pokemon/" +
+                    nomePokemon);
             // Abrir conexão HTTP
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            HttpURLConnection connection = (HttpURLConnection)
+                    url.openConnection();
             connection.setRequestMethod("GET");
 
             // Obter a resposta da API
@@ -43,9 +47,10 @@ public class PokeAPI {
                 int pokemonHeight = jsonNode.get("height").asInt();
                 int pokemonWeight = jsonNode.get("weight").asInt();
 
-                System.out.println("Name: " + pokemonName);
-                System.out.println("Height: " + pokemonHeight);
-                System.out.println("Weight: " + pokemonWeight);
+
+                System.out.println("Nome: " + pokemonName);
+                System.out.println("Altura: " + pokemonHeight);
+                System.out.println("Peso: " + pokemonWeight);
             } else {
                 System.out.println("Erro na conexão: " + responseCode);
             }
