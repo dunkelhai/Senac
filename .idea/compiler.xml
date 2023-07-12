@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="GenericSetMap" />
         <module name="Senac Xanxerê" />
+        <module name="Senac" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Desafios" target="17" />
+      <module name="GenericSetMap" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
